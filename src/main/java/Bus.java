@@ -19,15 +19,12 @@ public class Bus {
     public int getCapacity() {
         return this.capacity;
     }
-
+//
     public void addPerson(Person person) {
         if (this.passengerCount() < this.capacity) {
             this.passengers.add(person);
         }
-        System.out.println("Get off moi bus");
     }
-
-
 
     public Person removePerson() {
         return this.passengers.remove(0);

@@ -34,7 +34,8 @@ public class BusTest {
         bus.addPerson(person);
         bus.addPerson(person);
         bus.addPerson(person);
-        assertEquals("Get off moi bus", bus.addPerson(person));
+        bus.addPerson(person);
+        assertEquals(3, bus.passengerCount());
 
     }
 
